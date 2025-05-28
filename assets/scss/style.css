@@ -297,6 +297,11 @@ button, input, select, textarea, li, div {
   right: 0;
   z-index: -1;
 }
+@media screen and (min-width: 850px) {
+  .home .card-2 .car {
+    display: none;
+  }
+}
 @media screen and (max-width: 850px) {
   .home .card-2__content {
     padding: 10px 10px 0 0;

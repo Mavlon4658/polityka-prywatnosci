@@ -235,6 +235,10 @@ button, input, select, textarea, li, div {
             bottom: 0;
             right: 0;
             z-index: -1;
+
+            @include media(-850) {
+                display: none;
+            }
         }
 
         &__content {
