@@ -4,12 +4,36 @@
 html {
     font-size: 1px;
 
+    @media (max-height: 880px) {
+        font-size: 0.9px;
+    }
+
+    @media (max-height: 800px) {
+        font-size: 0.8px;
+    }
+
+    @media (max-height: 740px) {
+        font-size: 0.7px;
+    }
+
     @include media(1300) {
         font-size: 0.9px;
+
+        @media (max-height: 820px) {
+            font-size: 0.8px;
+        }
+
+        @media (max-height: 740px) {
+            font-size: 0.7px;
+        }
     }
 
     @include media(1150) {
         font-size: 0.8px;
+
+        @media (max-height: 750px) {
+            font-size: 0.7px;
+        }
     }
 
     @include media(980) {
@@ -118,7 +142,7 @@ button, input, select, textarea, li, div {
             line-height: 150%;
 
             &:hover {
-                text-decoration: underline;
+                color: #f4812e;
             }
         }
     }
@@ -140,15 +164,16 @@ button, input, select, textarea, li, div {
 
 // Home
 .home {
+    width: 100%;
+
     &-container {
         display: grid;
         grid-template-columns: 57.6% calc((100% - 57.6%) - 20rem);
         align-items: flex-start;
         gap: 20rem;
-        padding: 80rem 0;
+        padding: 20rem 0;
 
         @include media(850) {
-            padding: 34px 0 40px;
             grid-template-columns: repeat(1, minmax(0, 1fr));
             position: relative;
             z-index: 1;
@@ -719,66 +744,24 @@ button, input, select, textarea, li, div {
 }
 // Menu end
 
+main {
+    @include media(-850) {
+        height: calc(100vh - 118rem);
+        min-height: 765rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
 // Footer
 .footer {
     background: linear-gradient(134deg, #c3631e 0%, #ed5728 100%);
-    border-radius: 70rem 70rem 0 0;
+    border-radius: 30rem 30rem 0 0;
 
-    @include media(850) {
-        border-radius: 40px 40px 0 0;
-    }
-    
     &-container {
         max-width: 1320rem;
-        padding: 35rem 0 20rem;
-    }
-
-    &-top {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-
-        &__right {
-            display: flex;
-            align-items: flex-start;
-            gap: 219rem;
-        }
-    }
-
-    &-logo {
-        font-family: $font-inter;
-        font-style: italic;
-        font-weight: 700;
-        font-size: 30rem;
-        line-height: 140%;
-        letter-spacing: 0.01em;
-        text-transform: uppercase;
-    }
-
-    &-navs {
-        display: flex;
-        align-items: center;
-        gap: 80rem;
-
-        &__link {
-            font-family: $font-inter;
-            font-style: italic;
-            font-weight: 600;
-            font-size: 16rem;
-            line-height: 150%;
-            letter-spacing: 0.01em;
-        }
-    }
-
-    .telegram-link {
-        border: 1rem solid rgba(255, 255, 255, 0.3);
-        width: 45rem;
-        height: 45rem;
-        flex-shrink: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
+        padding: 20rem 0;
     }
 
     &-bottom {
