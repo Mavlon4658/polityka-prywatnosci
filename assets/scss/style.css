@@ -215,7 +215,10 @@ button, input, select, textarea, li, div {
   line-height: 150%;
 }
 .header-navs__link:hover {
-  color: #f4812e;
+  background: linear-gradient(134deg, #c3631e 0%, #ed5728 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .header .bars {
   display: flex;
@@ -375,8 +378,8 @@ button, input, select, textarea, li, div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32rem;
-  padding: 32rem;
+  gap: 24rem;
+  padding: 24rem 32rem;
 }
 @media screen and (max-width: 850px) {
   .home .card-2__form {
@@ -463,7 +466,7 @@ button, input, select, textarea, li, div {
 .home .card-2 .form-control label {
   font-family: "Manrope", sans-serif;
   font-weight: 700;
-  font-size: 20rem;
+  font-size: 16rem;
   line-height: 110%;
   color: #fff;
 }
@@ -686,9 +689,13 @@ button, input, select, textarea, li, div {
 .home .card-5:hover {
   background: #f48e45;
 }
+.home .card-5:hover img {
+  transform: rotateZ(-90deg);
+}
 .home .card-5 img {
   width: 32rem;
   flex-shrink: 0;
+  transition: 0.2s ease-in-out all;
 }
 @media screen and (max-width: 850px) {
   .home .card-5 img {
@@ -799,8 +806,7 @@ button, input, select, textarea, li, div {
 }
 
 .footer {
-  background: linear-gradient(134deg, #c3631e 0%, #ed5728 100%);
-  border-radius: 30rem 30rem 0 0;
+  background: #212121;
 }
 .footer-container {
   max-width: 1320rem;
@@ -835,7 +841,10 @@ button, input, select, textarea, li, div {
   }
 }
 .footer-bottom ul a:hover {
-  text-decoration: underline;
+  background: linear-gradient(134deg, #c3631e 0%, #ed5728 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .footer-bottom p {
   font-family: "Inter", sans-serif;
