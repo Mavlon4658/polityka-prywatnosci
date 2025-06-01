@@ -928,4 +928,69 @@ button, input, select, textarea, li, div {
     height: 30px;
     font-size: 12px;
   }
+}
+
+.policy {
+  padding: 40rem 0;
+}
+.policy-main {
+  min-height: inherit !important;
+  height: auto !important;
+}
+.policy-title {
+  font-weight: 800;
+  font-size: 60rem;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  margin-bottom: 24rem;
+}
+.policy-subtitle {
+  font-weight: 400;
+  font-size: 24rem;
+  line-height: 140%;
+  margin-bottom: 48rem;
+}
+.policy .texts {
+  max-width: 900rem;
+  display: flex;
+  flex-direction: column;
+  gap: 40rem;
+}
+.policy .texts-item h3 {
+  font-weight: 600;
+  font-size: 20rem;
+  line-height: 140%;
+  margin-bottom: 16rem;
+}
+.policy .texts-item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+}
+.policy .texts-item li {
+  font-weight: 400;
+  font-size: 16rem;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.75);
+}
+.policy .texts-item li a:not(.link) {
+  background: linear-gradient(134deg, #c3631e 0%, #ed5728 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.policy .texts-item li ul {
+  gap: 0px;
+}
+.policy .texts-item li ul a {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  font-size: 16px;
+}
+.policy .texts-item li ul a span {
+  background: linear-gradient(134deg, #c3631e 0%, #ed5728 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }/*# sourceMappingURL=style.css.map */

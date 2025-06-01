@@ -897,3 +897,83 @@ main {
     }
 }
 // Modal end
+
+// Policy
+.policy {
+    padding: 40rem 0;
+
+    &-main {
+        min-height: inherit !important;
+        height: auto !important;
+    }
+
+    &-title {
+        font-weight: 800;
+        font-size: 60rem;
+        line-height: 100%;
+        letter-spacing: -0.02em;
+        margin-bottom: 24rem;
+    }
+
+    &-subtitle {
+        font-weight: 400;
+        font-size: 24rem;
+        line-height: 140%;
+        margin-bottom: 48rem;
+    }
+
+    .texts {
+        max-width: 900rem;
+        display: flex;
+        flex-direction: column;
+        gap: 40rem;
+
+        &-item {
+            h3 {
+                font-weight: 600;
+                font-size: 20rem;
+                line-height: 140%;
+                margin-bottom: 16rem;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 16rem;
+            }
+
+            li {
+                font-weight: 400;
+                font-size: 16rem;
+                line-height: 140%;
+                color: rgba(255, 255, 255, 0.75);
+
+                a:not(.link) {
+                    background: linear-gradient(134deg, #c3631e 0%, #ed5728 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+                ul {
+                    gap: 0px;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        gap: 5rem;
+                        font-size: 16px;
+
+                        span {
+                            background: linear-gradient(134deg, #c3631e 0%, #ed5728 100%);
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// Policy end
